@@ -9,6 +9,7 @@ import Places from './Places'
 import Place from './Place'
 
 import Map from './Map'
+import Weather from './Weather'
 
 export default function App() {
 
@@ -35,7 +36,7 @@ export default function App() {
               <Link to="/places">Места</Link>
               <a href="#">Галерея</a>
               <Link to="/map">Карта</Link>
-              <a href="#">Погода</a>
+              <Link to="/weather">Погода</Link>
               <a href="#">Контакты</a>
             </nav>
 
@@ -61,6 +62,7 @@ export default function App() {
             <Route path="/places" element={<Places />} />
             <Route path="/place/:id" element={<Place />} />
             <Route path="/map" element={<Map />} />
+            <Route path="/weather" element={<Weather />} />
           </Routes>
 
         </main>

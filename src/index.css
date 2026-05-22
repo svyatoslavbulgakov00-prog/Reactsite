@@ -980,3 +980,164 @@ body {
 .map-list::-webkit-scrollbar-track {
   background: transparent;
 }
+.weather-page {
+  padding: 40px;
+  min-height: 100vh;
+  color: #fff;
+  background: #111; /* фикс фон */
+}
+
+.weather-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #C89B3C;
+}
+
+/* HERO */
+.weather-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+  background: #1b1b1b;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero-temp h2 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.hero-temp span {
+  color: #C89B3C;
+}
+
+/* FORECAST */
+.section-title {
+  margin: 30px 0 15px;
+}
+
+.forecast {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  flex: 1;
+  min-width: 120px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #1b1b1b;
+  border: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+  border-color: #C89B3C;
+}
+
+.forecast-card h3 {
+  color: #C89B3C;
+}
+.weather-page {
+  padding: 40px;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+/* DARK */
+.app.dark .weather-page {
+  background: #111;
+  color: #fff;
+}
+
+/* LIGHT */
+.app.light .weather-page {
+  background: #f4f6f8;
+  color: #111;
+}
+
+/* TITLE */
+.weather-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #C89B3C;
+}
+
+/* HERO */
+.weather-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* DARK CARD */
+.app.dark .weather-hero {
+  background: #1b1b1b;
+}
+
+/* LIGHT CARD */
+.app.light .weather-hero {
+  background: #ffffff;
+  border: 1px solid #ddd;
+}
+
+/* TEXT */
+.hero-temp h2 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.hero-temp span {
+  color: #C89B3C;
+}
+
+/* FORECAST */
+.forecast {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  flex: 1;
+  min-width: 120px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+/* DARK */
+.app.dark .forecast-card {
+  background: #1b1b1b;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* LIGHT */
+.app.light .forecast-card {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* CHART */
+.chart-box {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* DARK */
+.app.dark .chart-box {
+  background: #1b1b1b;
+}
+
+/* LIGHT */
+.app.light .chart-box {
+  background: #fff;
+  border: 1px solid #ddd;
+}
