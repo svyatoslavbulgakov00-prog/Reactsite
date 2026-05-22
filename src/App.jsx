@@ -10,6 +10,7 @@ import Place from './Place'
 
 import Map from './Map'
 import Weather from './Weather'
+import Contacts from "./Contacts"
 
 export default function App() {
 
@@ -37,7 +38,7 @@ export default function App() {
               <a href="#">Галерея</a>
               <Link to="/map">Карта</Link>
               <Link to="/weather">Погода</Link>
-              <a href="#">Контакты</a>
+              <Link to="/contacts">Контакты</Link>
             </nav>
 
             <button className="theme-btn" onClick={toggleTheme}>
@@ -63,6 +64,7 @@ export default function App() {
             <Route path="/place/:id" element={<Place />} />
             <Route path="/map" element={<Map />} />
             <Route path="/weather" element={<Weather />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
 
         </main>
@@ -94,7 +96,7 @@ export default function App() {
   <div className="footer-column">
     <h3>Информация</h3>
     <a href="/weather">Погода</a>
-    <a href="#">Контакты</a>
+    <a href="/contacts">Контакты</a>
 <a
   href={`https://t.me/${tg}`}
   target="_blank"

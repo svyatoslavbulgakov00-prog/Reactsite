@@ -1141,3 +1141,88 @@ body {
   background: #fff;
   border: 1px solid #ddd;
 }
+.contacts-page {
+  padding: 40px;
+}
+
+.contacts-title {
+  font-size: 42px;
+  color: #C89B3C;
+  margin-bottom: 10px;
+}
+
+.contacts-subtitle {
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+/* GRID */
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.contact-card {
+  background: #1b1b1b;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #C89B3C;
+}
+
+/* TEXT */
+.contact-card h3 {
+  color: #C89B3C;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.contact-card a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  color: #C89B3C;
+}
+
+/* LIGHT THEME */
+.app.light .contact-card {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.app.light .contact-card p {
+  color: #333;
+}
+
+.app.light .contacts-subtitle {
+  color: #444;
+}
+.app.light .contact-card h3 {
+  color: #111;
+}
+
+.app.light .contact-card p {
+  color: #444;
+}
+
+.app.light .contact-card a {
+  color: #1a1a1a;
+}
+
+.app.light .contact-card a:hover {
+  color: #C89B3C;
+}
