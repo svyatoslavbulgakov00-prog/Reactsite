@@ -8,7 +8,7 @@ import {
   ResponsiveContainer
 } from "recharts"
 
-const API_KEY = "22bec8cf0e54a3a4651c538bfbbc21b6"
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY
 
 const LAT = 51.298
 const LON = 37.835

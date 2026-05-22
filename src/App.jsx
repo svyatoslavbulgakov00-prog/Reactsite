@@ -14,7 +14,7 @@ import Weather from './Weather'
 export default function App() {
 
   const [theme, setTheme] = useState("dark")
-
+  const tg = import.meta.env.VITE_TELEGRAM_USERNAME
   const toggleTheme = () => {
     setTheme(prev => prev === "dark" ? "light" : "dark")
   }
@@ -88,14 +88,20 @@ export default function App() {
     <a href="#">Главная</a>
     <a href="/places">Места</a>
     <a href="#">Галерея</a>
-    <a href="#">Карта</a>
+    <a href="/map">Карта</a>
   </div>
 
   <div className="footer-column">
     <h3>Информация</h3>
-    <a href="#">Погода</a>
+    <a href="/weather">Погода</a>
     <a href="#">Контакты</a>
-    <a href="#">Поддержка</a>
+<a
+  href={`https://t.me/${tg}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Поддержка (Telegram)
+</a>
   </div>
 
           </div>
