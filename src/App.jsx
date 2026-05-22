@@ -1,8 +1,14 @@
 import { useState } from 'react'
+
 import { Routes, Route, Link } from 'react-router-dom'
+
 import Home from './Home'
+
 import Places from './Places'
+
 import Place from './Place'
+
+import Map from './Map'
 
 export default function App() {
 
@@ -28,7 +34,7 @@ export default function App() {
               <Link to="/">Главная</Link>
               <Link to="/places">Места</Link>
               <a href="#">Галерея</a>
-              <a href="#">Карта</a>
+              <Link to="/map">Карта</Link>
               <a href="#">Погода</a>
               <a href="#">Контакты</a>
             </nav>
@@ -54,6 +60,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/places" element={<Places />} />
             <Route path="/place/:id" element={<Place />} />
+            <Route path="/map" element={<Map />} />
           </Routes>
 
         </main>
