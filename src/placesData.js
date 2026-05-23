@@ -1,9 +1,4 @@
-import { Link } from 'react-router-dom'
-import { useState } from "react"
-
-export default function Places() {
-
-  const places = [
+const places = [
     {
       id: 1,
       title: "Парк Победы",
@@ -138,80 +133,4 @@ export default function Places() {
       full: "Маскарад — современное место для развлечений, отдыха и проведения свободного времени."
     }
   ]
-
-  const POSTS_PER_PAGE = 6
-
-  const [currentPage, setCurrentPage] = useState(1)
-
-  const lastPostIndex = currentPage * POSTS_PER_PAGE
-  const firstPostIndex = lastPostIndex - POSTS_PER_PAGE
-
-  const currentPosts = places.slice(firstPostIndex, lastPostIndex)
-
-  const totalPages = Math.ceil(places.length / POSTS_PER_PAGE)
-
-  return (
-    <div className="places">
-
-      <h1 className="places-title">
-        Места Старого Оскола
-      </h1>
-
-      <div className="places-grid">
-
-        {currentPosts.map((place, index) => (
-          <div
-            key={place.id}
-            className={`place-card ${index % 2 === 1 ? "right" : ""}`}
-          >
-
-            <img
-              src={place.image}
-              alt={place.title}
-            />
-
-            <div className="place-content">
-
-              <h2>{place.title}</h2>
-
-              <p>{place.short}</p>
-
-              <Link
-                to={`/place/${place.id}`}
-                className="btn"
-              >
-                Подробнее
-              </Link>
-
-            </div>
-
-          </div>
-        ))}
-
-      </div>
-
-      {/* PAGINATION */}
-
-      <div className="pagination">
-
-        {[...Array(totalPages)].map((_, index) => (
-          <button
-            key={index}
-            className={
-              currentPage === index + 1
-                ? "active"
-                : ""
-            }
-            onClick={() =>
-              setCurrentPage(index + 1)
-            }
-          >
-            {index + 1}
-          </button>
-        ))}
-
-      </div>
-
-    </div>
-  )
-}
+  export default places

@@ -1,50 +1,80 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, Link } from "react-router-dom"
+import places from "./placesData.js"
 
 export default function Place() {
-
   const { id } = useParams()
-  const navigate = useNavigate()
 
-  const data = {
-    1: {
-      title: "Парк Победы",
-      img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      text: "Большой городской парк с аллеями, фонтанами и зонами отдыха. Отличное место для прогулок."
-    },
-    2: {
-      title: "Набережная",
-      img: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      text: "Красивое место у воды для вечерних прогулок и отдыха."
-    },
-    3: {
-      title: "Центральная площадь",
-      img: "https://images.unsplash.com/photo-1508050919630-b135583b29ab",
-      text: "Главная площадь города, где проходят события и праздники."
-    },
-    4: {
-      title: "Краеведческий музей",
-      img: "https://images.unsplash.com/photo-1526318472351-c75fcf070305",
-      text: "Музей истории города с экспозициями о культуре региона."
-    }
+  const place = places.find(p => p.id === Number(id))
+
+  if (!place) {
+    return <div className="place-page">Место не найдено</div>
   }
-
-  const place = data[id]
-
-  if (!place) return <div>Не найдено</div>
 
   return (
     <div className="place-page">
 
-      {/* 🔙 BACK BUTTON */}
-      <button className="back-btn" onClick={() => navigate(-1)}>
-        ← Назад
-      </button>
+      {/* HERO */}
+      <div className="place-hero">
 
-      <h1>{place.title}</h1>
+        <img src={place.image} alt={place.title} />
 
-      <img src={place.img} alt={place.title} />
+        <div className="place-hero-content">
 
-      <p>{place.text}</p>
+          <h1>{place.title}</h1>
+
+          <p className="place-short">{place.short}</p>
+
+          {/* BUTTONS */}
+          <div className="place-actions">
+
+            <Link
+              to={`/map?id=${place.id}`}
+              className="btn"
+            >
+              📍 Открыть на карте
+            </Link>
+
+            <Link to="/places" className="btn secondary">
+              ← Назад
+            </Link>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* INFO BLOCK */}
+      <div className="place-info">
+
+        <div className="info-card">
+          <h3>Описание</h3>
+          <p>{place.full}</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Информация</h3>
+          <p>Тип: городская локация</p>
+          <p>Город: Старый Оскол</p>
+          <p>Доступ: свободный</p>
+        </div>
+
+      </div>
+
+      {/* GALLERY */}
+      <div className="place-gallery">
+
+        <h2>Галерея</h2>
+
+        <div className="gallery-grid">
+
+          <img src={place.image} />
+          <img src={place.image} />
+          <img src={place.image} />
+
+        </div>
+
+      </div>
 
     </div>
   )

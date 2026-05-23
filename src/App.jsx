@@ -35,7 +35,6 @@ export default function App() {
             <nav className="nav">
               <Link to="/">Главная</Link>
               <Link to="/places">Места</Link>
-              <a href="#">Галерея</a>
               <Link to="/map">Карта</Link>
               <Link to="/weather">Погода</Link>
               <Link to="/contacts">Контакты</Link>
@@ -89,7 +88,6 @@ export default function App() {
     <h3>Навигация</h3>
     <a href="#">Главная</a>
     <a href="/places">Места</a>
-    <a href="#">Галерея</a>
     <a href="/map">Карта</a>
   </div>
 
