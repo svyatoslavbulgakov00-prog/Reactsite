@@ -152,7 +152,6 @@ const places = [
   },
 ]
 
-/* FLY TO COMPONENT */
 function FlyToPlace({ position }) {
   const map = useMap()
 

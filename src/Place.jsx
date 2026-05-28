@@ -13,7 +13,7 @@ export default function Place() {
   return (
     <div className="place-page">
 
-      {/* HERO */}
+
       <div className="place-hero">
 
         <img src={place.image} alt={place.title} />
@@ -24,7 +24,6 @@ export default function Place() {
 
           <p className="place-short">{place.short}</p>
 
-          {/* BUTTONS */}
           <div className="place-actions">
 
             <Link
@@ -43,8 +42,6 @@ export default function Place() {
         </div>
 
       </div>
-
-      {/* INFO BLOCK */}
       <div className="place-info">
 
         <div className="info-card">
@@ -61,21 +58,7 @@ export default function Place() {
 
       </div>
 
-      {/* GALLERY */}
-      <div className="place-gallery">
-
-        <h2>Галерея</h2>
-
-        <div className="gallery-grid">
-
-          <img src={place.image} />
-          <img src={place.image} />
-          <img src={place.image} />
-
-        </div>
-
-      </div>
-
+      
     </div>
   )
 }

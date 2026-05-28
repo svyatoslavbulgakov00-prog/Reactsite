@@ -5,12 +5,11 @@ export default function Contacts() {
       <h1 className="contacts-title">Контакты</h1>
 
       <p className="contacts-subtitle">
-        Связь с разработчиком проекта “Старый Оскол”
+        Связь с разработчиком проекта
       </p>
 
       <div className="contacts-grid">
 
-        {/* Telegram */}
         <div className="contact-card">
           <h3>Telegram</h3>
           <p>Быстрая связь и поддержка</p>
@@ -24,7 +23,6 @@ export default function Contacts() {
           </a>
         </div>
 
-        {/* Email */}
         <div className="contact-card">
           <h3>Email</h3>
           <p>Почта:</p>
@@ -33,7 +31,6 @@ export default function Contacts() {
 </a>
         </div>
 
-        {/* GitHub */}
         <div className="contact-card">
           <h3>GitHub</h3>
           <p>Ссылка на профиль</p>

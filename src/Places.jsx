@@ -7,7 +7,7 @@ export default function Places() {
     {
       id: 1,
       title: "Парк Победы",
-      image: "/images/pobeda.jpg",
+      image: "/images/ploshadpobedi.jpg",
       short: "Главный парк города для прогулок, отдыха и мероприятий.",
       full: "Парк Победы — одно из самых популярных мест отдыха в Старом Осколе. Здесь расположены прогулочные зоны, аллеи, места для отдыха и памятные объекты."
     },
@@ -21,14 +21,14 @@ export default function Places() {
     {
       id: 3,
       title: "Краеведческий музей",
-      image: "/images/museum.jpg",
+      image: "/images/musei.jpg",
       short: "История города и региона в одном месте.",
       full: "Краеведческий музей знакомит жителей и туристов с историей Старого Оскола, культурой и развитием региона."
     },
     {
       id: 4,
       title: "Парк Металлургов",
-      image: "/images/metall.jpg",
+      image: "/images/park.jpg",
       short: "Зелёная зона отдыха и прогулок.",
       full: "Парк Металлургов — спокойное место для отдыха, прогулок и семейного времяпровождения."
     },
@@ -42,28 +42,28 @@ export default function Places() {
     {
       id: 6,
       title: "Парк Железнодорожников",
-      image: "/images/trainpark.jpg",
+      image: "/images/park_j.jpg",
       short: "Парк рядом с железнодорожным районом.",
       full: "Парк Железнодорожников — зелёная зона города, популярная среди местных жителей."
     },
     {
       id: 7,
       title: "ЦМИ",
-      image: "/images/cmi.jpg",
+      image: "/images/Mi.jpg",
       short: "Центр молодёжных инициатив.",
       full: "ЦМИ — культурное пространство города, где проходят концерты, мероприятия и встречи молодёжи."
     },
     {
       id: 8,
       title: "Солнечный парк",
-      image: "/images/sunpark.jpg",
+      image: "/images/atr.jpeg",
       short: "Место для отдыха и прогулок.",
       full: "Солнечный парк — современная зона отдыха с зелёными территориями и прогулочными маршрутами."
     },
     {
       id: 9,
       title: "Комсомольский парк",
-      image: "/images/komsomol.jpg",
+      image: "/images/kom.jpg",
       short: "Классический городской парк.",
       full: "Комсомольский парк — зелёная территория для прогулок, спорта и отдыха на природе."
     },
@@ -84,21 +84,21 @@ export default function Places() {
     {
       id: 12,
       title: "Олимпийский парк",
-      image: "/images/olimp.jpg",
+      image: "/images/olimp.jpeg",
       short: "Спорт и отдых в одном месте.",
       full: "Олимпийский парк — современная территория для прогулок, спорта и семейного отдыха."
     },
     {
       id: 13,
       title: "ТЦ Карусель",
-      image: "/images/karusel.jpg",
+      image: "/images/kar.jpeg",
       short: "Торговый центр города.",
       full: "ТЦ Карусель объединяет магазины, кафе и зоны отдыха для посетителей."
     },
     {
       id: 14,
       title: "Аллея Героев",
-      image: "/images/heroes.jpg",
+      image: "/images/al.jpg",
       short: "Мемориальная прогулочная зона.",
       full: "Аллея Героев посвящена памяти героев и является важным историческим местом города."
     },
@@ -119,7 +119,7 @@ export default function Places() {
     {
       id: 17,
       title: "Линия",
-      image: "/images/line.jpg",
+      image: "/images/linia.jpg",
       short: "Популярный торговый объект.",
       full: "Линия — крупный торговый комплекс с продуктами, магазинами и городской инфраструктурой."
     },
@@ -190,7 +190,6 @@ export default function Places() {
 
       </div>
 
-      {/* PAGINATION */}
 
       <div className="pagination">
 

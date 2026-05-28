@@ -25,7 +25,6 @@ export default function App() {
 
       <div className="layout">
 
-        {/* SIDEBAR */}
         <aside className="sidebar">
 
           <div>
@@ -54,7 +53,6 @@ export default function App() {
 
         </aside>
 
-        {/* MAIN */}
         <main className="main">
 
           <Routes>
@@ -70,7 +68,6 @@ export default function App() {
 
       </div>
 
-      {/* FOOTER */}
       <footer className="footer">
 
         <div className="footer-top">

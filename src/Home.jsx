@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <>
 
-      {/* HERO */}
       <section className="hero fade-section">
 
         <div className="hero-content">
@@ -59,7 +58,6 @@ export default function Home() {
 
       </section>
 
-      {/* INFO */}
       <section className="info-section fade-section">
 
         <div className="info-card">
@@ -88,7 +86,6 @@ export default function Home() {
 
       </section>
 
-      {/* ABOUT */}
       <section className="about-section fade-section">
 
         <div className="about-right">
